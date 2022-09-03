@@ -11,10 +11,15 @@ y0 = [deg2rad(20) 0];
 % simulate the pendulum
 [t,y] = ode45(@(t,y)simpend(y,g,L),tspan,y0);
 
-% create a fun animation
+% create a fun animation, save to a video
+v = VideoWriter('pend');
+open(v);
 for k=1:length(t)
     drawpend(y(k,1),L);
+    frame = getframe(gcf);
+    writeVideo(v,frame);
 end
+close(v);
 
 % plot the pendulum's motion
 figure
