@@ -10,6 +10,9 @@ mr = 1;
 plot([0 xm],[0 ym],'k','LineWidth',2);
 rectangle('Position',[xm-mr/2,ym-mr/2,mr,mr],'Curvature',1,'FaceColor',[1 0.1 .1],'LineWidth',1.5);
 
+% draw text
+text(-1,2,['Theta: ',num2str(rad2deg(theta),'%.2f'),'°'])
+
 axis([-1.5*L 1.5*L -1.5*L 1.5*L]); 
 axis square
 set(gcf,'Position',[100 100 1000 400])
