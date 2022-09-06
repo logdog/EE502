@@ -3,3 +3,6 @@ We find the equations of motion for an inverted double pendulum on a frictionles
 
 ## Controlled using LQR
 ![](LQR.gif)
+
+## Uncontrolled
+![](FREE.gif)
