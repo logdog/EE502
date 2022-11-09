@@ -1,18 +1,18 @@
 close all; clear all; clc
 
 % parameters
-m = 1; M = 10; g = 9.81; L = 2;
+m = 0.01; M = 1; g = 9.81; L = 0.5;
 
 % state space model (obtained from EOM.m)
 A =[[0, 1,               0, 0]
-    [0, 0,            -g/M, 0]
+    [0, 0,        -(g*m)/M, 0]
     [0, 0,               0, 1]
-    [0, 0, (g + M*g)/(2*M), 0]];
+    [0, 0, (M*g + g*m)/(M*L), 0]];
 B = [0; 1/M; 0; -1/(2*M)];
 
 % LQR
-Q = diag([1,1,100,100]);
-R = 10;
+Q = diag([1,1,10,10]);
+R = 1000;
 K = lqr(A,B,Q,R);
 
 % simulation

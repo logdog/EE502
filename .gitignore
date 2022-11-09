@@ -3,3 +3,6 @@ random/*
 reading/*
 *.pdf
 *.editorconfig
+*.xml
+*.slxc
+~*.docx
