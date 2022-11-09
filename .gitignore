@@ -6,3 +6,5 @@ reading/*
 *.xml
 *.slxc
 ~*.docx
+checksum*
+varInfo.mat

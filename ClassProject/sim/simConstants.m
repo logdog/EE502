@@ -5,7 +5,10 @@ g = 9.81;
 L = 0.2;
 
 % Time delay in angle sensors
-Td = 10e-6;
+Td = 50e-6;
+
+% Sample Time (how fast is arduino running?)
+Ts = 50e-6;
 
 % initial condition
 theta0 = deg2rad(5);
