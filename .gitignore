@@ -8,3 +8,13 @@ reading/*
 ~*.docx
 checksum*
 varInfo.mat
+*.json
+*.png
+*.jpg
+*.mp4
+*.dmr
+ClassProject/simulink/resources/*
+ClassProject/simulink/slprj/*
+*.exp
+*.lib
+*.mexw64
