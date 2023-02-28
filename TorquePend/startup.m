@@ -5,7 +5,7 @@ g = 9.81;
 b = 0;
 
 % initial conditions
-theta0 = deg2rad(5);
+theta0 = 0;
 theta_dot0 = 0;
 
 % swingup controller gain
